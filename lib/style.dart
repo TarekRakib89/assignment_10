@@ -13,3 +13,27 @@ TextStyle applyTextStyle() {
     color: Colors.black,
   );
 }
+
+InputDecoration applyTextFieldDecoration({String? text}) {
+  return InputDecoration(
+    border: const OutlineInputBorder(
+      borderSide: BorderSide(
+        width: 2,
+        color: Colors.black12,
+      ),
+    ),
+    enabledBorder: const OutlineInputBorder(
+      borderSide: BorderSide(
+        width: 1,
+        color: Colors.grey,
+      ),
+    ),
+    focusedBorder: const OutlineInputBorder(
+      borderSide: BorderSide(
+        width: 2,
+        color: Colors.blue,
+      ),
+    ),
+    hintText: text,
+  );
+}
